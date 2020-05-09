@@ -280,6 +280,11 @@ header {
     width: auto;
     flex: 2;
 }
+.project-img video{
+    width: 100%;
+    height:auto;
+    flex: 2;
+}
 
 .project-description{
     flex: 1;
