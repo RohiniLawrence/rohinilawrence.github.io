@@ -1,0 +1,508 @@
+/*global*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: "BungeeShade";
+    src: url("fonts/BungeeShade-Regular.ttf");
+}
+@font-face {
+    font-family: "Anton";
+    src: url("fonts/Anton-Regular.ttf");
+}
+html{
+    font-size:10px;
+    font-family: 'Roboto', sans-serif;
+    color: #ffffff;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    background-size: cover;
+    color: black;
+}
+
+section{
+    margin: 7rem 0 0 0;  
+}
+
+a{
+    text-decoration: none;
+    color: #eee;
+}
+
+p{
+    font-size: 1.8rem;
+    font-weight: 300;
+}
+
+img{
+   width:  100%;
+}
+
+/*resusable*/
+.container{
+    width: 90%;
+    max-width: 120rem;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+li{
+    margin: 0 2rem;
+}
+
+
+
+
+
+/*header*/
+header {
+    width: 100%;
+    height: 100vh;
+}
+
+/* Navigation BAR */
+.top-nav{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: -100vh;
+    z-index: 50;
+    background-color: #d1d1f6;
+    transition: all 650ms cubic-bezier(1,0,0,1);
+}
+
+.nav-list{
+    flex-direction: column;
+    width: 100%;
+    list-style: none;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-link{
+    font-family: 'The Historia Demo', sans-serif ;
+    font-size: 10rem;
+    padding:1rem;
+}
+
+.nav-link:hover,
+.nav-link:focus{
+    background: linear-gradient(to top, #ffe838, #fd57bf);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.top-nav.open{
+    top: 0;
+    border-radius: initial;
+}
+
+/* menu toggler */
+
+.menu-toggler{
+    position:  absolute ;
+    top:5rem;
+    right: 5rem;
+    width: 5rem;
+    height: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    z-index: 1500;
+    transition: transform 275ms ease-out;
+}
+
+.menu-toggler.open{
+    transform: rotate(-45deg);
+}
+
+.bar{
+    background: #9784c0;
+   /* background: linear-gradient(to right, #ffe838,#fd57bf);*/
+   
+    width: 100%;
+    height: 4px;
+    border-radius: .8rem;
+}
+
+.bar.half{
+    width: 50%;
+}
+.bar.start{
+    transform-origin: right;
+    transition: transform 650ms cubic-bezier(0.54, -0.81, 0.57, 0.57);
+}
+.open .bar.start{
+    transform: rotate(-90deg) translateX(.8rem);
+}
+.bar.end{
+    align-self: flex-end;
+    transform-origin: left;
+    transition: transform 650ms cubic-bezier(0.54, -0.81, 0.57, 0.57);
+}
+.open .bar.end{
+    transform: rotate(-90deg) translateX(-.8rem);
+}
+
+/* Landing TEXT */
+.landing-text{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform:  translate(-50%, -50%);
+    width: 100%;
+    text-align:center;
+    z-index: 1;
+}
+
+.landing-text h1{
+    font-size: 10rem;
+    line-height: 1.6;
+    font-family:"BungeeShade";
+    background: linear-gradient(to top, #7445a0, #d1d1f6);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding: 1rem;
+    user-select: none;
+}
+
+.landing-text h6{
+    font-size: 6rem;
+    font-weight: 300;
+    margin-top: 2rem;
+}
+
+
+/* section headings */
+
+.section-heading h1{
+    font-size: 8rem;
+    color: rgba(99, 95, 104, 0.795);
+}
+
+/*about*/
+
+.about .container{
+    margin-top: 20rem;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.section-heading{
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 0;
+    margin-bottom: 6rem;  
+}
+
+/* skills */
+
+.skills .container{
+    margin-top: 20rem;
+}
+
+.my-skills{
+    margin-top: 10rem;
+    display: grid;
+    grid-template-columns:  repeat(auto-fit, minmax(25rem, 1fr));
+    grid-gap: 2.5rem;
+    text-align: center;
+}
+
+.skill{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.skill h1{
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 2rem -2px 2rem 0;
+    color: rgb(0, 0, 0);
+}
+
+.skill-icon-container{
+    width: 10rem;
+    height: 10rem;
+    border: 3px solid #3f3d3f5e;
+    background-color: #a25eca;
+    margin-bottom: 2rem;
+    display: flex;
+    transform: rotate(45deg);
+}
+
+.skill-icon-container i{
+    color:#ffffff;
+    font-size: 5rem;
+    margin: auto;
+    transform: rotate(-45deg);
+}
+
+/* projects */
+.has-margin-right{
+    margin-right: 5rem;
+}
+
+.projects .container{
+    margin-top: 20rem;
+}
+
+.project-item{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5rem;
+    overflow-x: hidden
+}
+
+.project-item:last-child{
+    margin-bottom:0;
+}
+
+.project-img{
+    width: auto;
+    flex: 2;
+}
+
+.project-description{
+    flex: 1;
+    
+}
+
+.project-description h1{
+    font-size: 3rem;
+    font-weight: 300;
+    margin: rem 0;
+    
+  
+  
+}
+.project-description h6{
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-weight: 300;
+    opacity: 0.3;
+}
+
+.project-description p{
+    align-items: center;
+    word-break: break-all;
+    white-space: normal;
+}
+.project-description .cta{
+     display: inline-block;
+     margin-top: 2.5rem;
+     font-size: 1.5rem;
+     text-transform: uppercase;
+     color: #3883ff;
+     transition:  color 650ms;
+}
+
+.project-description .cta:hover{
+    color: #2f67cd;
+}
+
+
+/* contact */
+
+.contact .container{
+    margin-top: 20rem;
+    margin-bottom: 20rem;
+    display: flex ;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+.contact i{
+    font-size: 5rem;
+    color: #3f3d3f;;
+}
+
+.phone-number{
+    margin: auto;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+.phone-number i,h1{
+    justify-content: center;
+    margin-top: .5rem;
+    color: #3f3d3f;
+    
+}
+.social-list{
+    list-style: none;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.copyright{
+    
+    width: 100%;
+    text-align: center;
+    background-color: #161616;
+    padding: 2rem 0;
+    position: relative;
+}
+.copyright p{
+    color: white;
+}
+
+.up{
+    position: absolute;
+    width: 5rem;
+    height: 5rem;
+    background-color: #eee;
+    top:-2.5rem;
+    right: 5rem;
+    border-radius: 100%;
+    display: flex;
+    animation: pulse 2s infinite;
+    cursor: pointer;
+}
+
+.up i{
+    color: #000000;
+    font-size: 2rem;
+    margin: auto;
+
+}
+
+.copyright p{
+    font-size: 1.4rem;
+}
+
+@keyframes pulse{
+    0%{
+        box-shadow: 0 0 0 0 rgba(200, 87, 253, 0.99);
+    }
+    70%{
+        box-shadow: 0 0 0 2rem rgba(214, 87, 253, 0);
+    }
+    100%{
+        box-shadow: 0 0 0 0 rgba(212, 102, 240, 0);
+    }
+}
+@media screen and (max-width: 1024px){
+    
+    .nav-link{
+        font-size: 8rem;
+        padding:1rem;
+    }
+    
+}
+
+@media screen and (max-width: 768px){
+    body{
+        width: 100%;
+        background-color: #ffffff;
+        background-size: cover;
+    }
+    .has-margin-right{
+        margin-right: 5rem;
+    }
+    .landing-text h1{
+        font-size: 6rem;
+    }
+    .landing-text h6{
+        font-size: 2rem;
+    }
+    
+    li{
+        margin: 2rem 8;;
+    }
+    .nav-link{
+        font-size: 4.5rem;
+    }
+    .section-heading h1{
+        font-size: 8rem;
+        background: linear-gradient(to top, #b4a1c7, #0000001e);
+    }
+    .about-details .nav-list{
+        flex-direction: initial;
+    }
+    .about-detsils li{
+        margin: 0 2rem;
+    }
+
+    .icon-container{
+        width:7rem;
+        height: 7rem;
+    }
+    .icon-container i{
+        font-size: 4rem;
+    }
+    
+
+}
+
+@media screen and (max-width: 600px){
+    .menu-toggler{
+        top:2rem;
+        right:2rem;
+
+    }
+    p{
+        font-size: 1.6rem;
+        font-weight: 300;
+    }
+    .section-heading h1{
+        font-size: 5rem;
+        color: rgba(99, 95, 104, 0.795);
+    }
+
+    .landing-text h1{
+        font-size: 4rem;
+    }
+    .landing-text h6{
+        font-size: 2rem;
+    }
+    .nav-link{
+        font-size: 3.5rem;
+    }
+    .about .container{
+        margin-top: 5rem;
+        flex-direction:column;
+    }
+    .my-skills{
+        margin-top: 10rem;
+        display: grid;
+        grid-template-columns:  repeat(auto-fit, minmax(20rem, 1fr));
+        grid-gap: 2.5rem;
+        text-align: center;
+    }
+    .project-img{
+        order: 1;
+        margin: 0 0 2em 0;
+    }
+    .project-item{
+        
+        flex-direction: column;
+    }
+    .project-description{
+        order: 2;
+        margin: 0;
+    }
+
+   
+
+}
+
+
+
