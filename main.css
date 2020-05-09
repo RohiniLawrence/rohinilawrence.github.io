@@ -198,6 +198,9 @@ header {
     align-items: center;
     justify-content: center;
 }
+.about p{
+    text-align: center;
+}
 .section-heading{
     text-align: center;
     text-transform: uppercase;
