@@ -159,6 +159,7 @@ header {
     list-style: none;
     height: 100%;
     display: flex;
+    
     justify-content: center;
     align-items: center;
 }
@@ -166,6 +167,7 @@ header {
 .nav-link{
     font-family: 'The Historia Demo', sans-serif ;
     font-size: 10rem;
+    color: rgba(93, 77, 100, 0.747);
     padding:1rem;
 }
 
