@@ -4,6 +4,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 @font-face {
     font-family: "BungeeShade";
     src: url("fonts/BungeeShade-Regular.ttf");
@@ -584,6 +585,18 @@ header {
     .project-description{
         order: 2;
         margin: 0;
+    }
+    .up{
+        position: absolute;
+        width: 5rem;
+        height: 5rem;
+        background-color: #eee;
+        top:-2.5rem;
+        right: 1.5rem;
+        border-radius: 100%;
+        display: flex;
+        animation: pulse 2s infinite;
+        cursor: pointer;
     }
 
    
