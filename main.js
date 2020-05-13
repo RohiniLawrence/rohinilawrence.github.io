@@ -12,9 +12,8 @@ function showProject(event, language) {
 
     document.getElementById(language).style.display = "block";
 
-
-        event.currentTarget.className.replace(" active", "");
    
+    event.currentTarget.className += " active";
     AOS.refreshHard(); 
    
   }

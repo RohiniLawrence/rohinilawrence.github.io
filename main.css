@@ -13,6 +13,10 @@
     font-family: "Anton";
     src: url("fonts/Anton-Regular.ttf");
 }
+@font-face {
+    font-family: "src-code-pro";
+    src: url("fonts/SourceCodePro-SemiBold.ttf");
+}
 html{
     font-size:10px;
     font-family: 'Roboto', sans-serif;
@@ -44,23 +48,25 @@ body{
     background-color: rgba(195, 163, 236, 0.664);
     margin: .6rem;
     border-radius: 4rem;
-    
-    border: none;
+    border-width: 0rem;
     outline: none;
     cursor: pointer;
     padding: 14px 16px;
     transition: 0.3s;
     font-size: 2rem;
+    font-family: 'src-code-pro';
+    color: rgb(40, 33, 44);
   }
   
 
   .tab button:hover {
-    background-color: #ddd;
+    background-color: rgba(173, 126, 218, 0.904);
   }
   
 
   .tab button.active {
-    background-color: rgb(170, 106, 255);
+    background-color: rgba(90, 70, 107, 0.904);
+    color: white;
   }
   
 
@@ -391,7 +397,6 @@ header {
 
 
 .projects .container{
-    
     margin-top: 20rem;
 }
 
