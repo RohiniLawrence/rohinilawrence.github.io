@@ -32,6 +32,45 @@ body{
     height: auto;
 }
 
+.tab {
+    margin-top: 8rem;
+    align-content: center;
+    overflow: hidden;
+    text-align: center;
+  }
+  
+
+  .tab button {
+    background-color: rgba(195, 163, 236, 0.664);
+    margin: .6rem;
+    border-radius: 4rem;
+    
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 2rem;
+  }
+  
+
+  .tab button:hover {
+    background-color: #ddd;
+  }
+  
+
+  .tab button.active {
+    background-color: rgb(170, 106, 255);
+  }
+  
+
+  .tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+  }
+
 .circle-area{
     z-index: -1;
     position: absolute;
@@ -350,11 +389,14 @@ header {
     margin-right: 5rem;
 }
 
+
 .projects .container{
+    
     margin-top: 20rem;
 }
 
 .project-item{
+
     margin-top: 10rem;
     width: 100%;
     display: flex;
