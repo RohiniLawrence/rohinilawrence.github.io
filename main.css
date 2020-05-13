@@ -559,7 +559,12 @@ header {
     .icon-container i{
         font-size: 4rem;
     }
-    
+    .contact i{
+        font-size: 4rem;
+        color: #3f3d3f;
+        /* margin-left: 1rem;
+        margin-right: 1rem; */
+    }
 
 }
 
@@ -623,7 +628,12 @@ header {
         cursor: pointer;
     }
 
-   
+    .contact i{
+        font-size: 3rem;
+        color: #3f3d3f;
+        /* margin-left: 1rem;
+        margin-right: 1rem; */
+    }
 
 }
 
