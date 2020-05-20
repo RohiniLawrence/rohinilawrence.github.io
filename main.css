@@ -24,12 +24,15 @@ html{
 }
 
 body{
-    
+    overflow-y: scroll;
     width: 100%;
     height: 100%;
     background-color: #ffffff;
     background-size: cover;
     color: black;
+}
+body::-webkit-scrollbar {
+    display: none;
 }
 .animation-area{
     width: 100%;
@@ -292,8 +295,6 @@ header {
     z-index: 1;
 }
 
-
-
 .landing-text h1{
     font-size: 10rem;
     line-height: 1.6;
@@ -322,7 +323,57 @@ header {
     margin-top: 2rem;
 }
 
+.scrolldown{
+    position: absolute;
+    top:90%;
+    left: 50%;
+    width: 2rem;
+    height: 2rem;
+    background: rgba(255, 255, 221, 0);
+    transform: translateY(-80px) translateX(-50%)rotate(45deg);
+}
+.scrolldown span{
+    position: absolute;
+    top: 0rem;
+    left: 0rem;
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-bottom: .2rem solid #7445a0e0;
+    border-right: .2rem solid #7445a0e0;
+    animation: scroll-animat 1.5s linear infinite;
+}
 
+
+.scrolldown span:nth-child(1){
+transform: translate(-1.6rem, -1.6rem);
+animation-delay: -0.4s;
+}
+.scrolldown span:nth-child(2){
+    transform: translate(0rem,0rem);
+    animation-delay: -0.2s;
+ }
+ .scrolldown span:nth-child(3){
+    transform: translate(1.6rem,1.6rem);
+    animation-delay: 0s;
+ }
+ @keyframes scroll-animat {
+    0%{
+        top: -1.5rem;
+        left: -1.5rem;
+        opacity:0;
+    }
+    25%{
+        top: 0rem;
+        left: 0rem;
+        opacity:1;
+    }
+    50%,100%{
+        top: 1.5rem;
+        left: 1.5rem;
+        opacity:0;
+    }
+}
 /* section headings */
 
 .section-heading h1{
@@ -351,8 +402,7 @@ header {
 /* skills */
 
 .skills .container{
-    margin-top: 20rem;
-    
+    margin-top: 20rem;    
 }
 
 .my-skills{
@@ -361,6 +411,7 @@ header {
     grid-template-columns:  repeat(auto-fit, minmax(30rem, 1fr));
     grid-gap: 2.5rem;
     justify-content: center;
+
 }
 
 .skill{
@@ -380,12 +431,12 @@ header {
     color: rgb(0, 0, 0);
 }
 
-.skill p{
+/* .skill p{
   
     align-content: center;
     font-size: 1.4rem;
     letter-spacing: .1rem;
-}
+} */
 .skills-flex-container{
     align-items: center;
     display: flex;
@@ -630,7 +681,7 @@ header {
         font-size: 4.5rem;
     }
     .section-heading h1{
-        font-size: 8rem;
+        font-size: 6.7rem;
         background: linear-gradient(to top, #b4a1c7, #0000001e);
     }
     .about-details .nav-list{
