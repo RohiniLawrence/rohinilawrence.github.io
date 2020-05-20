@@ -356,19 +356,18 @@ header {
 }
 
 .my-skills{
-    margin-top: 10rem;
-    
+    margin-top: 15rem;
     display: grid;
     grid-template-columns:  repeat(auto-fit, minmax(30rem, 1fr));
     grid-gap: 2.5rem;
-    text-align: center;
+    justify-content: center;
 }
 
 .skill{
     margin-bottom: 7rem;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    flex-wrap: wrap;
     align-items: center;
     
    
@@ -387,8 +386,35 @@ header {
     font-size: 1.4rem;
     letter-spacing: .1rem;
 }
-.skill-icon-container{
+.skills-flex-container{
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row; 
+    justify-content: center;
     
+}
+.skill-container{
+    margin: .3rem;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.skill-icon-img{
+    display: flex;
+    width: 4rem;
+    margin: .3rem;
+}
+.skill-icon-name{
+    margin: .3rem;
+    display: flex;
+    font-size: 1rem;
+    letter-spacing: .1rem;
+    font-weight: bold;
+}
+.skill-icon-container{
     width: 10rem;
     height: 10rem;
     border: 1px solid #3f3d3f2c;
