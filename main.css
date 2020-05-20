@@ -48,7 +48,7 @@ body::-webkit-scrollbar {
     align-content: center;
     overflow: hidden;
     text-align: center;
-    z-index: 4000;
+    z-index: 900;
   }
   
 
@@ -211,7 +211,7 @@ header {
     height: 100%;
     position: fixed;
     top: -100vh;
-    z-index: 5000;
+    z-index: 1000;
     background-color: #d1d1f6;
     transition: all 650ms cubic-bezier(1,0,0,1);
 }
@@ -797,6 +797,3 @@ animation-delay: -0.4s;
     }
 
 }
-
-
-
