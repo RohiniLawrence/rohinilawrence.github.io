@@ -22,17 +22,17 @@ function showProject(event, language) {
 
   $(document).ready(function(){
 
-    const parallax= document.querySelector(".landing-text ");
-    const mountains= document.querySelector("ice-mountains");
+    // const parallax= document.querySelector(".landing-text ");
+    // const mountains= document.querySelector("ice-mountains");
 
    
-    window.addEventListener("scroll", function()
-    {
-        let offset = window.pageYOffset;
-        parallax.style.backgroundPositionY = offset *1+"px";
-        mountains.style.backgroundPositionY = offset  * 10000 +"px";
+    // window.addEventListener("scroll", function()
+    // {
+    //     let offset = window.pageYOffset;
+    //     parallax.style.backgroundPositionY = offset *1+"px";
+    //     mountains.style.backgroundPositionY = offset  * 10000 +"px";
 
-    })
+    // })
   
     
     $('.menu-toggler').on('click', function(){

@@ -416,7 +416,7 @@ animation-delay: -0.4s;
 .my-skills{
     margin-top: 15rem;
     display: grid;
-    grid-template-columns:  repeat(auto-fit, minmax(30rem, 1fr));
+    grid-template-columns:  repeat(auto-fit, minmax(40rem, 1fr));
     grid-gap: 2.5rem;
     justify-content: center;
 
@@ -464,6 +464,7 @@ animation-delay: -0.4s;
 .skill-icon-img{
     display: flex;
     width: 4rem;
+    height: auto;
     margin: .3rem;
 }
 .skill-icon-name{
