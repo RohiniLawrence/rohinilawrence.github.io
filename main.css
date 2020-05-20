@@ -40,7 +40,9 @@ body::-webkit-scrollbar {
     height: auto;
 }
 
-.tab {
+.tab {position: -webkit-sticky;
+    position: sticky;
+    top: 0;
     margin-top: 8rem;
     align-content: center;
     overflow: hidden;
@@ -49,6 +51,7 @@ body::-webkit-scrollbar {
   
 
   .tab button {
+      
     background-color: rgba(195, 163, 236, 0.664);
     margin: .6rem;
     border-radius: 4rem;
