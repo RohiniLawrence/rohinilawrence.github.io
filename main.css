@@ -78,7 +78,10 @@ body::-webkit-scrollbar {
     background-color: rgb(90, 70, 107);
     color: white;
   }
-  
+  .tab button.scrolled {
+    background-color: rgb(90, 70, 107);
+    color: white;
+  }
 
   .tabcontent {
     display: none;
@@ -498,6 +501,9 @@ animation-delay: -0.4s;
     margin-right: 5rem;
 }
 
+.langcontainer{
+    margin-top: 10rem;
+}
 
 .projects .container{
     margin-top: 20rem;
