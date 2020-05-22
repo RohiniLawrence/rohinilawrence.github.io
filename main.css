@@ -42,8 +42,8 @@ body::-webkit-scrollbar {
 
 .tab {
     position: -webkit-sticky;
-  position: sticky;
-  top: 0;
+    position: sticky;
+    top: 0;
     margin-top: 8rem;
     align-content: center;
     overflow: hidden;
@@ -62,7 +62,6 @@ body::-webkit-scrollbar {
     cursor: pointer;
     padding: 14px 16px;
     transition: 0.3s;
-    
     font-size: 2rem;
     font-family: 'src-code-pro';
     color: rgb(40, 33, 44);
@@ -79,9 +78,9 @@ body::-webkit-scrollbar {
 
   .tab button.active {
     background-color: rgb(90, 70, 107);
-    color: white;
+    color: white;   
   }
-  
+ 
 
   .tabcontent {
     display: none;
@@ -469,6 +468,10 @@ animation-delay: -0.4s;
 }
 
 .skill-icon-img{
+    height:5rem;
+    
+}
+.skill-icon-img img{
     width: 4rem;
     height: auto;
     margin: .3rem;
@@ -520,14 +523,21 @@ animation-delay: -0.4s;
     overflow-x: hidden
 }
 
-.tech-used img{
+.tech-used{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+/* .tech-used img{
     width: 3rem;
     margin: 1rem;
-}
+    
+} */
 
 .tech-used p{
     margin-top: 2rem;
    font-weight: bold; 
+  width:100%;
 }
 
 .project-item:last-child{
@@ -696,7 +706,7 @@ animation-delay: -0.4s;
         font-size: 6rem;
     }
     .landing-text h6{
-        font-size: 2rem;
+        font-size: 3rem;
     }
    
     
@@ -757,7 +767,7 @@ animation-delay: -0.4s;
         font-size: 4rem;
     }
     .landing-text h6{
-        font-size: 2rem;
+        font-size: 4rem;
     }
     .nav-link{
         font-size: 3.5rem;
@@ -805,6 +815,19 @@ animation-delay: -0.4s;
         /* margin-left: 1rem;
         margin-right: 1rem; */
     }
+    .tab button {
+       
+        margin: .4rem;
+        border-radius: 4rem;
+        border-width: 0rem;
+        outline: none;
+        cursor: pointer;
+        padding: 9px 11px;
+        transition: 0.3s;
+        font-size: 1.8rem;
+        font-family: 'src-code-pro';
+        color: rgb(40, 33, 44);
+      }
     
 
 }
