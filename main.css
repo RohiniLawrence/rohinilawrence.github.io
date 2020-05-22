@@ -657,13 +657,13 @@ animation-delay: -0.4s;
 
 @keyframes pulse{
     0%{
-        box-shadow: 0 0 0 0 rgba(184, 142, 223, 0.09);
+        box-shadow: 0 0 2rem rgba(46, 12, 56, 0.699);
     }
     50%{
-        box-shadow: 0 0 0 2rem rgba(184, 142, 223, 0.4);
+        box-shadow: 0 0 5rem rgba(46, 12, 56, 0.699);
     }
     100%{
-        box-shadow: 0 0 0 0 rgba(184, 142, 223, 0.03);
+        box-shadow: 0 0 2rem rgba(46, 12, 56, 0.699);
     }
 }
 @media screen and (max-width: 1200px){
