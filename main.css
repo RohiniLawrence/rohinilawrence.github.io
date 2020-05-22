@@ -640,7 +640,7 @@ animation-delay: -0.4s;
     right: 5rem;
     border-radius: 100%;
     display: flex;
-    animation: pulse 2s infinite;
+    animation: pulse 2s infinite ;
     cursor: pointer;
 }
 
@@ -657,13 +657,15 @@ animation-delay: -0.4s;
 
 @keyframes pulse{
     0%{
-        box-shadow: 0 0 2rem rgba(46, 12, 56, 0.699);
+        box-shadow: 0 0 0.3rem rgb(210, 187, 216);
     }
+  
     50%{
-        box-shadow: 0 0 5rem rgba(46, 12, 56, 0.699);
+        box-shadow: 0 0 3rem rgb(156, 137, 161);
     }
+    
     100%{
-        box-shadow: 0 0 2rem rgba(46, 12, 56, 0.699);
+        box-shadow: 0 0 0.3rem rgb(210, 187, 216);
     }
 }
 @media screen and (max-width: 1200px){
