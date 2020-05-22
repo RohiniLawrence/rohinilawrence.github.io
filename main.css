@@ -68,20 +68,20 @@ body::-webkit-scrollbar {
     color: rgb(40, 33, 44);
   }
   
-
-  .tab button:hover {
-    background-color: rgb(174, 126, 218);
+  @media (hover: hover) { 
+    .tab button:hover {
+        background-color: rgb(174, 126, 218);
+      }
+      
   }
-  
+
+
 
   .tab button.active {
     background-color: rgb(90, 70, 107);
     color: white;
   }
-  .tab button.scrolled {
-    background-color: rgb(90, 70, 107);
-    color: white;
-  }
+  
 
   .tabcontent {
     display: none;
@@ -741,6 +741,7 @@ animation-delay: -0.4s;
         right:2rem;
 
     }
+    
     p{
         font-size: 1.6rem;
         font-weight: 300;
@@ -770,6 +771,7 @@ animation-delay: -0.4s;
         grid-gap: 2.5rem;
         text-align: center;
     }
+   
     .project-img{
         order: 1;
         margin: 0 0 2em 0;
@@ -801,5 +803,6 @@ animation-delay: -0.4s;
         /* margin-left: 1rem;
         margin-right: 1rem; */
     }
+    
 
 }
