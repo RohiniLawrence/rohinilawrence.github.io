@@ -53,7 +53,7 @@ body::-webkit-scrollbar {
   
 
   .tab button {
-    box-shadow: 0 0 6px rgba(46, 12, 56, 0.699);
+    box-shadow: 0 0 0.4rem rgba(46, 12, 56, 0.699);
     background-color: rgb(211, 191, 236);
     margin: .6rem;
     border-radius: 4rem;
